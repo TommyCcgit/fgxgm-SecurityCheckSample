@@ -1,4 +1,6 @@
-FROM node:21.6.1-bookworm-slim › gnutls28/libgnutls30@3.7.9-2+deb12u2
+FROM node:21.6.1-bookworm-slim
+from node:gnutls28/libgnutls30@3.7.9-2+deb12u2
+
 RUN npm install -g npm@9.1.3
 
 ADD package.json .
